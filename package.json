@@ -3,22 +3,29 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server",
+    "dev": "webpack-dev-server --https --port 8443",
     "prod": "webpack -p"
   },
   "author": "Jeremy Hancock",
   "license": "ISC",
   "dependencies": {
+    "adal-angular": "^1.0.14",
     "bootstrap": "^3.3.7",
+    "expose-loader": "^0.7.3",
+    "flux": "^3.1.2",
     "lodash": "^4.17.4",
     "office-ui-fabric-react": "^1.12.0",
+    "q": "^1.4.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-router": "^3.0.2",
     "reactify": "^1.1.1"
   },
   "devDependencies": {
-    "@types/react": "^15.0.11",
+    "@types/lodash": "^4.14.53",
+    "@types/node": "^7.0.5",
+    "@types/q": "0.0.32",
+    "@types/react": "^15.0.12",
     "@types/react-dom": "^0.14.23",
     "css-loader": "^0.26.1",
     "extract-text-webpack-plugin": "^2.0.0-rc.3",

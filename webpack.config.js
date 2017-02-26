@@ -40,7 +40,6 @@ module.exports = {
 
     module: {
         rules: [
-            // { test: /\.ts(x?)$/, include: BUILD_DIR, use: 'awesome-typescript-loader' },
             { test: /\.tsx?$/, include: BUILD_DIR, use: 'ts-loader' },
             {
                 test: /\.scss$/, use: ExtractTextPlugin.extract({
@@ -50,7 +49,7 @@ module.exports = {
                 })
             }
 
-                //ExtractTextPlugin.extract(['style-loader', 'css-loader', 'sass-loader']) },
+            //ExtractTextPlugin.extract(['style-loader', 'css-loader', 'sass-loader']) },
             // { test: /\.(png|jpg|jpeg|gif|svg)$/, use: 'url-loader?limit=25000' }
         ]
     },

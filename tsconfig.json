@@ -2,10 +2,11 @@
     "compilerOptions": {
         "outDir": "dist",
         "sourceMap": true,
-        "noImplicitAny": true,
+        "noImplicitAny": false,
         "module": "commonjs",
         "target": "es5",
-        "jsx": "react"
+        "jsx": "react",
+        "allowJs": true
     },
     "include": [
         "./src/**/*"
@@ -14,4 +15,7 @@
         "node_modules"
     ],
     "compileOnSave": true
+    // "files": [
+    //     // "typings/index.d.ts"
+    // ]
 }
